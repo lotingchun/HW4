@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Songs of Beauty and the Beast</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        body {
+            margin,
+            padding: 0;
+            background: url(pic/BAB1.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+      p{  font-size: 17px;}
+
+        h3 {
+            color: red;
+            ;
+        }
+
+        #p {
+            color: #FF8888;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script language="JavaScript">
+        $(document).ready(function() {
+            $('#p1').fadeTo("fast", 0.3);
+            $('#p1').mouseenter(function() {
+                    $(this).fadeTo("slow", 1);
+                })
+                .mouseleave(function() {
+                    $(this).fadeTo("fast", 0.3);
+                });
+        });
+    </script>
+</head>
+
+<body bgcolor="	#000000" text="#FFFFFF">
+
+    <h3>Two songs of Beauty and the Beast</h3>
+    <div class="w3-container">
+        <p id="p">It is only use for practice!
+            <br>Please push the button below!</p>
+
+        <p>
+            <img src="pic/beast.png" width="74" height="80">
+            <img src="pic/belle.png" width="74" height="80">
+            <br>
+            <button class="w3-button w3-hover-blue" onclick="self.location.href='beast.html'">Beast</button>
+            <button class="w3-button w3-hover-red" onclick="self.location.href='beauty.html'">Beauty</button>
+        </p>
+
+  <pre>    <p id="p1">
+  作業說明：
+  主題：兩首歌曲
+  其中第一首歌的按鈕用到show(),hide(),toggle()以顯示作詞曲者和歌詞
+  第二首歌歌詞因為較長,所以分段按按鈕用slideDown(),slideUp(),
+  slideToggle()顯示歌詞,fadeIn(),fadeOut(),fadeToggle()顯示圖片
+  其兩首歌的youtube影片皆用到fadeTo() 滑鼠移過去後就會按不規則fade顯示
+  此段文字也用到fadeTo()！
+  此頁面有音樂自動撥放 不想聽請記得關起來!!
+    </p></pre></div>
+            <button class="w3-button w3-black w3-round-large" onclick="self.location.href='http://www.disney.com.tw/movie/page.php?no=5'"><img src="pic/rose.png" width="74" height="80"><br>More infromation</button><br>
+
+
+            <audio controls="controls" autoplay="autoplay">
+  <source src="25 Alan Menken - Main Title Prologue.mp3" type="audio/mpeg" />
+        </audio>
+</body>
+
+</html>

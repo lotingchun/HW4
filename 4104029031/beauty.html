@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>beauty</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        body {
+            background-image: url(pic/BAB3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script language="JavaScript">
+        $(document).ready(function() {
+            $("p").hide();
+            $("#div0").hide();
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#slide0").hide();
+            $("#slideX").hide();
+
+            $("#slide").click(function() {
+                $("p").slideDown("slow");
+                $("#div0").fadeIn("3000");
+                $("#slide").hide();
+                $("#slide0").show();
+                $("#slideX").show();
+            });
+           $("#slideX").click(function() {
+                $("p").slideUp("slow");
+                $("#div0").fadeOut("8000");
+                $("#slide0").hide();
+                $("#slideX").hide();
+                $("#slide").show();
+            });
+            $("#slide0").click(function() {
+                $("p").slideUp("slow");
+                $("#div0").fadeOut("8000");
+                $("#slide0").hide();
+                $("#slideX").hide();
+                $("#slide").show();
+            });
+
+            $("#slide1").click(function() {
+                var p = $("p.p1");
+                p.slideToggle("slow");
+                $("#div1").fadeToggle("slow");
+                if ($(this).text() == '1')
+                    $(this).text('x');
+                else
+                    $(this).text('1');
+                return false;
+            });
+
+            $("#slide2").click(function() {
+                var p = $("p.p2");
+                p.slideToggle("slow");
+                $("#div2").fadeToggle("slow");
+                if ($(this).text() == '2')
+                    $(this).text('x');
+                else
+                    $(this).text('2');
+                return false;
+            });
+            $("#slide3").click(function() {
+                var p = $("p.p3");
+                p.slideToggle("slow");
+                $("#div3").fadeToggle("slow");
+                if ($(this).text() == '3')
+                    $(this).text('x');
+                else
+                    $(this).text('3');
+                return false;
+            });
+
+            $("#slide4").click(function() {
+                var p = $("p.p4");
+                p.slideToggle("slow");
+                $("#div4").fadeToggle("slow");
+                if ($(this).text() == '4')
+                    $(this).text('x');
+                else
+                    $(this).text('4');
+                return false;
+            });
+
+            $('iframe').mouseenter(function() {
+            $(this).fadeTo("slow",1); })
+            .mouseleave(function() {
+            $(this).fadeTo("fast",Math.random());
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="	#000000" text="#FFFFFF">
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/egQbaDRMxGI" frameborder="0" allowfullscreen></iframe>
+        <div id="all">
+            <h4>Belle</h4>
+            <h10>貝兒一出場所唱的歌，也是一首介紹貝兒(Belle在法文意思是指美人的意思)的歌</h10>
+            <div id="div0"><img src="pic/BAB4.jpg" width="1000" height="550"></div>
+            <button id="slideX" class="w3-button w3-circle w3-black">取消</button>
+            <div id="div1"><img src="pic/belle1.jpg" width="700" height="390"></div>
+            <div id="div2"><img src="pic/Belle2.jpg" width="700" height="390"></div>
+            <div id="div3"><img src="pic/gaston.jpg" width="700" height="390"></div>
+            <div id="div4"><img src="pic/belle3.jpg" width="700" height="390"></div>
+            <pre>    <p class="p1">
+[BELLE]
+Little town, it's a quiet village
+Every day like the one before
+Little town, full of little people
+Waking up to say
+
+[ENSEMBLE]
+Bonjour! Bonjour!
+Bonjour! Bonjour! Bonjour!
+
+[BELLE]
+There goes the baker with his tray, like always
+The same old bread and rolls to sell
+Every morning just the same
+Since the morning that we came
+To this poor, provincial town
+
+[MONSIEUR JEAN, spoken]
+Good Morning, Belle!
+
+[BELLE, spoken]
+Good morning, Monsieur Jean
+Have you lost something again?
+
+[MONSIEUR JEAN, spoken]
+Well, I believe I have
+Problem is, I've—I can't remember what
+Oh well, I'm sure it'll come to me
+Where are you off to?
+
+[BELLE]
+To return this book to Père Robert
+It's about two lovers in fair Verona
+
+[MONSIEUR JEAN, spoken]
+Sounds boring
+</p><p class="p2">
+[ENSEMBLE]
+Look there she goes, that girl is strange, no question
+Dazed and distracted, can't you tell?
+Never part of any crowd
+'Cause her head's up on some cloud
+No denying she's a funny girl that Belle
+
+Bonjour! Good day! How is your family?
+Bonjour! Good day! How is your wife?
+I need six eggs! That's too expensive!
+
+[BELLE]
+There must be more than this provincial life!
+
+[PERE ROBERT, spoken]
+Ahh, if it isn't the only bookworm in town!
+So, where did you run off to this week?
+
+[BELLE, spoken]
+Two cities in Northern Italy
+I didn't want to come back
+Have you got any new places to go?
+
+[PERE ROBERT, spoken]
+I'm afraid not...
+But you may re-read any of the old ones that you'd like
+
+[BELLE, spoken]
+Your library makes our small corner of the world feel big
+
+[PERE ROBERT, spoken]
+Bon voyage!
+
+[ENSEMBLE]
+Look there she goes, the girl is so peculiar
+I wonder if she's feeling well
+With a dreamy, far-off look
+And her nose stuck in a book
+What a puzzle to the rest of us is Belle
+
+[BELLE]
+Oh, isn't this amazing?
+It's my favourite part because—you'll see
+Here's where she meets Prince Charming
+But she won't discover that it's him 'til Chapter Three!
+
+[ENSEMBLE]
+Now it's no wonder that her name means "Beauty"
+Her looks have got no parallel
+But behind that fair facade
+I'm afraid she's rather odd
+Very diff'rent from the rest of us
+She's nothing like the rest of us
+Yes, diff'rent from the rest of us is Belle!
+</p><p class="p3">
+[GASTON, spoken]
+Look at her, LeFou—my future wife
+Belle is the most beautiful girl in the village
+That makes her the best
+
+[LEFOU, spoken]
+But she's so... well-read!
+And you're so... athletically inclined
+
+[GASTON, spoken]
+Yes... But ever since the war, I've felt like I've been missing something.
+And she's the only girl that gives me that sense of—
+
+[LEFOU, spoken]
+Mmm... je ne sais quoi?
+
+[GASTON, spoken]
+I don't know what that means
+
+(sung)
+Right from the moment when I met her, saw her
+I said she's gorgeous and I fell
+Here in town, there's only she
+Who is beautiful as me
+So I'm making plans to woo and marry Belle
+
+[ENSEMBLE]
+Look there he goes
+Isn't he dreamy?
+Monsieur Gaston
+Oh, he's so cute!
+Be still, my heart
+I'm hardly breathing
+He's such a tall, dark, strong and handsome brute!
+</p><p class="p4">
+[WOMAN 1]
+Bonjour!
+
+[GASTON]
+Pardon
+
+[BELLE]
+Good day
+
+[WOMAN 2]
+Mais oui!
+
+[WOMAN 3]
+You call this bacon?
+
+[WOMAN 4]
+What lovely flowers!
+
+[Man 1]
+Some cheese
+
+[WOMAN 5]
+Ten yards!
+
+[MAN 1]
+One pound
+
+[GASTON]
+Excuse me
+
+[CHEESE MERCHANT]
+I'll get the knife
+
+[GASTON]
+Please let me through!
+
+[WOMAN 6]
+This bread
+
+[WOMAN 7]
+Those fish
+
+[WOMAN 6]
+It's stale!
+
+[WOMAN 7]
+They smell!
+
+[MEN]
+Madame's mistaken
+
+[WOMEN]
+Well, maybe so
+
+[BELLE]
+There must be more than this provincial life!
+
+[GASTON]
+Just watch, I'm going to make Belle my wife!
+
+[ENSEMBLE]
+Look there she goes
+That girl is strange but special
+A most peculiar mademoiselle!
+
+It's a pity and a sin
+She doesn't quite fit in
+'Cause she really is a funny girl
+A beauty but a funny girl
+She really is a funny girl
+That Belle!
+</p></pre>
+            <button id="slide" class="w3-button w3-circle w3-pink">全部</button>
+            <button id="slide0" class="w3-button w3-circle w3-pink">取消</button>
+            <button id="slide1" class="w3-button w3-circle w3-pink">1</button>
+            <button id="slide2" class="w3-button w3-circle w3-pink">2</button>
+            <button id="slide3" class="w3-button w3-circle w3-pink">3</button>
+            <button id="slide4" class="w3-button w3-circle w3-pink">4</button>
+        </div>
+
+         <div class="w3-container">
+            <img src="pic/rose.png" width="74" height="80">
+            <button class="w3-button w3-hover-blue" onclick="self.location.href='beast.html'">聽野獸爬塔之歌!!</button>
+            <button class="w3-button w3-hover-white" onclick="self.location.href='index.html'">回到主頁</button>
+    </center>
+    </div>
+
+</body>
+
+</html>

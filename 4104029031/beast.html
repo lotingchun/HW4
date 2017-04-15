@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>野獸爬塔之歌</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        body {
+            margin  ,
+            padding: 0;
+            background: url(pic/BAB2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script language="JavaScript">
+       $(document).ready(function() {
+            $('p.p1').hide();
+            $('#hide1').hide();
+
+            $("#show1").click(function() {
+                $("p.p1").show();
+                $('#show1').hide();
+                $('#hide1').show();
+            });
+            $("#hide1").click(function() {
+                $("p.p1").hide();
+                $('#hide1').hide();
+                $('#show1').show();
+            });
+            var p = $('p.p2');
+            p.hide();
+            $('#toggle').click(function() {
+                p.toggle(1000);
+                if ($(this).text() == '歌詞')
+                    $(this).text('不要歌詞');
+                else
+                    $(this).text('歌詞');
+                return false;
+            });
+            $('iframe').mouseenter(function() {
+            $(this).fadeTo("slow",1); })
+            .mouseleave(function() {
+            $(this).fadeTo("fast",Math.random());
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="	#000000" text="#FFFFFF">
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/tPcxqpMbcSg" frameborder="0" allowfullscreen></iframe>
+        <div>
+            <h4>野獸爬塔之歌</h4>
+            <p>為什麼稱之為野獸爬塔之歌呢？顧名思義，其為野獸因貝兒離去(回家看老爸)而傷心爬塔的唱歌！</p>
+            <p class="p1">
+                Lyrics from "Beauty and the Beast"
+                <br>Performed by Dan Steven
+                <br>Music and lyrics by Alan Menken and Tim Rice
+            </p>
+            <pre>  <p class="p2">
+          I was the one who had it all
+          I was the master of my fate
+          I never needed anybody in my life
+          I learned the truth too late
+          I'll never shake away the pain
+          I close my eyes but she's still there
+          I let her steal into my melancholy heart
+          It's more than I can bear
+
+          Now I know she'll never leave me
+          Even as she runs away
+          She will still torment me
+          Calm me, hurt me
+          Move me, come what may
+          Wasting in my lonely tower
+          Waiting by an open door
+          I'll fool myself, she'll walk right in
+          And be with me for evermore
+
+          I rage against the trials of love
+          I curse the fading of the light
+          Though she's already flown so far beyond my reach
+          She's never out of sight
+
+          Now I know she'll never leave me
+          Even as she fades from view
+          She will still inspire me
+          Be a part of everything I do
+          Wasting in my lonely tower
+          Waiting by an open door
+          I'll fool myself, she'll walk right in
+          And as the long, long nights begin
+          I'll think of all that might have been
+          Waiting here for evermore</p>  </pre>
+
+            <button id="show1" class="w3-button w3-hover-blue">作詞曲者及演唱者</button>
+            <button id="hide1" class="w3-button w3-hover-blue">不想看到他們</button>
+            <button id="toggle" class="w3-button w3-hover-purple">歌詞</button>
+        </div>
+        <div class="w3-container">
+            <img src="pic/rose.png" width="74" height="80">
+            <button class="w3-button w3-hover-red" onclick="self.location.href='beauty.html'">不想看野獸想看美女!!</button>
+            <button class="w3-button w3-hover-white" onclick="self.location.href='index.html'">回到主頁</button>
+        </div>
+    </center>
+
+</body>
+
+</html>
